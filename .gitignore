@@ -1,0 +1,45 @@
+# ============================================================
+# SQL/Data Training - Git ignore rules
+# ============================================================
+
+# ---------- Secrets / environment variables ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- dbt ----------
+target/
+dbt_packages/
+logs/
+
+# ---------- Data files / local exports ----------
+*.csv
+*.xlsx
+*.parquet
+
+# ---------- Database dumps / backups ----------
+*.sql.gz
+*.dump
+*.backup
+
+# ---------- Logs / temporary files ----------
+*.log
+*.tmp
+*.temp
+
+# ---------- Operating systems ----------
+Thumbs.db
+
+# ---------- IDE ----------
+.vscode/
+.idea/
